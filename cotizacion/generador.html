@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JaesClub </title>
+    <link rel="icon" href="img/LOGO.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/facture.css">
+</head>
+
+<body>
+    <div class="cont">
+        <header>
+            <h1>Cotización</h1>
+            <div class="societe">
+                <input type="text" class="soc" placeholder="Servicio" id="n_societe">
+                <input type="text" class="soc" id="Direccion" placeholder="C Juventino Rosas 8 62010 ">
+                <input type="text" class="soc" placeholder="777-213-3893" id="n_numero">
+                <input type="text" class="soc" placeholder="jaesclub@protonmail.com">
+            </div>
+            <!-- -- -->
+            <div class="num_date">
+                <div class="num">
+                    <label for="nfacture">N° de Cotización</label>
+                    <input type="number" id="nfacture" name="nfacture">
+                </div>
+                <div class="date">
+                    <label for="date">Fecha :</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="clear"></div>
+
+        </header>
+        <!-- ----FIN DU HEADER---- -->
+
+        <main>
+            <div class="a">
+                <h3>Para : </h3>
+                <select id="client">
+                    <option>Nuevo Cliente</option>
+                    <option>Miembro Nvl 1</option>
+                    <option>Distribuidor Nvl 2</option>
+                    <option>Membresia Nvl 3</option>
+                    <option>Preferencial Nvl 4</option>
+                </select>
+                <input type="text" id="nsociete" placeholder="Nombre">
+                <input type="text" id="nom" placeholder="Telefono">
+                <input type="text" id="rue" placeholder="Sin Whatssapp">
+                <input type="text" id="cp" placeholder="Sin Facebook">
+                <input type="text" id="num" placeholder="Domicilio">
+            </div>
+            <!-- -- -->
+            <div class="exp">
+                <h3>Metodo de pago : </h3>
+                <select id="client_exp">
+                    <option value="Bernard">Efectivo</option>
+                    <option value="Gertrude">Pendiente</option>
+                    <option value="Gérard">Transferencia Bancaria</option>
+                    <option value="Jeano">Plataforma en Linea</option>
+                </select>
+                <input type="text" id="nsociete" placeholder="Cantidad">
+                <input type="text" id="nom" placeholder="Nota Corta">
+                <input type="text" id="rue" placeholder="Nota Corta">
+                <input type="text" id="cp" placeholder="Nota Corta">
+                <input type="text" id="num" placeholder="Nota Corta">
+            </div>
+            <div class="clear"></div>
+        
+
+            <h2>Mano de Obra, Material e Instalacion.</h2>
+
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                             <input type="text" id="client_exp" placeholder="Mano de Obra">
+                        </th>
+                        <td></td>
+                        <td></td>
+                        <td><input type="number" placeholder="$1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                             <input type="text" id="client_exp" placeholder="Servicio/Personal">
+                        </th>
+                        <td></td>
+                        <td></td>
+                        <td><input type="number" placeholder="$1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                             <input type="text" id="client_exp" placeholder="Material">
+                        </th>
+                        <td></td>
+                        <td></td>
+                        <td><input type="number" placeholder="$1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                             <input type="text" id="client_exp" placeholder="Instalacion">
+                        </th>
+                        <td></td>
+                        <td></td>
+                        <td><input type="number" placeholder="$1"></td>
+                        <td></td>
+                    </tr>
+
+            </table>
+            <hr>
+            <div class="clear"></div>
+            <div class="remise">
+                <p>   Membresia JaesClub <mark>$500</mark>, Con 2 visitas residenciales de mantenimiento
+                   : <span class="cinq"></span>   Servicio al Cliente Preferencial & Descuentos. Obténgala con su provedor JaesClub Oficial. </p>
+            </div>
+
+            <div class="prix">
+                <div id="tab">
+
+                    <table>
+                        <tr>
+									 
+                            <td>SUB-TOTAL</td>
+                            <td><input type="text" placeholder="SUB-TOTAL"></td>
+                        </tr>
+                        <tr>
+                            <td>Decuento %</td>
+                            <td><input type="text" placeholder="----"></td>
+                        </tr>
+                        <tr>
+                            <td>Envio</td>
+                            <td><input type="text" placeholder="----"></td>
+                        </tr>
+                        <tr>
+
+                            <td>Importe total (TOTAL)</td>
+                            <td><input type="text" placeholder="Total"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </main>
+        <!----------------------FIN DU  PRIX TOTAL------------------------>
+
+        <div class="clear"></div>
+        <!-------------------FOOTER--------------------->
+        <footer>
+            <p>Recuerde que para nosotros, usted es Importante <span id="nSociete"></span> <br> Llámenos al 777-213-3893 ó
+              777-411-3219 & formalice la alternativa de su elección lo atenderermos con mucho gusto en un horario de atención Lun-Vier 7:00am-10pm / Sab-Dom 8:00am-8:00pm  <span id="num_dubuisson"></span> https://jaesclubjc.github.io/Enrique-Jaime/ <span id="adr"></span></p>
+            <p class="merci">Comprobante Digital Emitido a  través de Internet por JaesClub.</p>
+            <button onclick="myFunction()">Imprimir</button>
+        </footer>
+    </div>
+    <script src="js/facture.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	 <script type="text/javascript">
+	 //<![CDATA[
+	 if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Googlebot/i)) || (navigator.userAgent.match(/Chrome/i)) || (navigator.userAgent.match(/Firefox/i))) {""} else {
+	 document.write('<style type="text/css" media="screen">#sidebar,#menu{display:none;}#page{width:99%;}#content{width:99%;}</style>');}
+	 //]]>
+	 </script>
+
+</body>
+
+</html>
